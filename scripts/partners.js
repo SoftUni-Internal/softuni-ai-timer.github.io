@@ -1,3 +1,3 @@
 export const partners = [
-  { src: "./public/partners/postbank.png", name: "PostBank" },
+  { src: "./public/partners/postbank.png", name: "Postbank" },
 ];
