@@ -41,6 +41,9 @@ export function manageQueryString(search) {
         } else if (prep) {
             elements.time.minutes().textContent = formatTimeContent(getMinutesToSet());
         }
+        
+        if (on === "true") { controlCenter(); }
+        if (mod === "false") { elements.modal.closeButton().click(); }
     }
 };
 
