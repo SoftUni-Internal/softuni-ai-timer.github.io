@@ -12,17 +12,6 @@ export function setupModal() {
     suggestions().addEventListener('click', pickSuggestedTime);
 };
 
-// export function toggleTimerState(timerStateEl, isStarted) {
-//     timerStateEl.classList = [];
-//     if (isStarted) {
-//         timerStateEl.textContent = "[ON]";
-//         timerStateEl.classList.toggle('timer-on');
-//     } else {
-//         timerStateEl.textContent = "[OFF]";
-//         timerStateEl.classList.toggle('timer-off');
-//     }
-// };
-
 function setTheTimer(e) {
 
     e.preventDefault();
@@ -40,13 +29,13 @@ function setTheTimer(e) {
 
     if(!isStartedYet()) { 
         controlCenter();
-        // elements.info.timerState().click(); 
     }
 }
 
 function toggleModal() {
     modal().classList.toggle("closed");
     modalOverlay().classList.toggle("closed");
+    controlCenter();
 }
 
 function pickSuggestedTime(e) {
